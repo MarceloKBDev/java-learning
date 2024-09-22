@@ -1,4 +1,4 @@
-package listaExerciciosIFRN;
+package exerciseList_IFRN;
 
 import java.util.HashMap;
 import java.util.Map;
