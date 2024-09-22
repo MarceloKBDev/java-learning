@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class Exercise1 {
 /*
- * Write an algorithm that reads an age input, expressed in years, months
- * and days then shows it expressed in days.
+ * Write an algorithm that reads an age input, expressed in years, months and days then shows it expressed in days.
  * Consider that a year has 365 days and that a month has 30 days.
  * eg: 3 years, 2 months and 15 days = 1170 days
  */
@@ -26,16 +25,16 @@ public class Exercise1 {
         System.out.print("Days: ");
         mapAgeValues.put("ageDays", scan.nextInt());
 
-        return mapAgeValues; // Return the map containing age values
+        return mapAgeValues;
     }
 
-    //Method to convert age to days
+    //Method to convert age to days//
 	private static int convertToDays(int ageYears, int ageMonths, int ageDays) {
 		int ageAsDays = ageDays+(ageMonths*30)+(ageYears*365);
 		return ageAsDays;
 	}
 
-    //Method that summons methods 'inputAge' and 'convertToDays'.
+    //Method that summons methods 'inputAge' and 'convertToDays'//
     private static int convertUserInputToDays() {
     	//Get user input and store in mapAgeValues//
     	Map<String, Integer> mapAgeValues = inputAge();
@@ -71,7 +70,7 @@ public class Exercise1 {
 			}
 
 		}
-		//Closing Scanner 'scan' to avoid memory leaks//
+		//Closing Scanner 'scan' to prevent memory leaks//
 		scan.close();
 	}
 }
