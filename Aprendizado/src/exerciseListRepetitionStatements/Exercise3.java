@@ -17,5 +17,6 @@ public class Exercise3 {
 			System.out.println(userName);
 			i++;
 		}
+		scan.close();
 	}
 }
