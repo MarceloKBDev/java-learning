@@ -12,8 +12,8 @@ public class CourseGUI {
 		int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
 		JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
 		
-		double height= Double.parseDouble(JOptionPane.showInputDialog("Enter your age"));
-		JOptionPane.showMessageDialog(null, "Your height is " + height + " cm tall.");
+		double height= Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+		JOptionPane.showMessageDialog(null, "Your are " + height + "cm tall.");
 	}
 
 }

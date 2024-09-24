@@ -1,19 +1,23 @@
 package courseBroCode;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class CourseCalculateHypotenuse {
 
 	public static void main(String[] args) {
+		double catetoA, catetoB, hypotenuse;
+		Scanner scan = new Scanner(System.in);
 		
-		String name = JOptionPane.showInputDialog("Enter your name");
-		JOptionPane.showMessageDialog(null, "Hello, " + name);
+		//Getting triangle leg sizes
+		System.out.println("Please type the first leg length: ");
+		catetoA = scan.nextDouble();		
+		System.out.println("Please type the second leg length: ");
+		catetoB = scan.nextDouble();
 		
-		int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-		JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
+		//Calculate hypotenuse 'C^2 = A^2 + B^2'
+		hypotenuse = Math.sqrt((Math.pow(catetoA, 2))+(Math.pow(catetoB, 2)));
 		
-		double height= Double.parseDouble(JOptionPane.showInputDialog("Enter your age"));
-		JOptionPane.showMessageDialog(null, "Your height is " + height + " cm tall.");
+		System.out.println(hypotenuse);
 	}
 
 }
